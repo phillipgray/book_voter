@@ -8,5 +8,12 @@ html
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
 
   body
+    header.navbar.navbar-fixed-top
+      .container
+        = link_to "BookVoter", "#", id: "logo"
+        nav
+          ul.nav.navbar-nav.navbar-right
+            li= link_to "Home", "#"
+            li= link_to "Log in", "#"
     .container
       = yield
